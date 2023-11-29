@@ -1,6 +1,5 @@
 container:
-  image: ruby:latest
+  image: node:latest
 
 task:
-  name: RSpec
-  script: nproc
+  tests_script: nproc

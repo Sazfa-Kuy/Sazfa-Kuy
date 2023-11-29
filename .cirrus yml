@@ -1,0 +1,7 @@
+container:
+  image: ruby:latest
+
+task:
+  matrix:
+    - name: peota
+      script: nproc

